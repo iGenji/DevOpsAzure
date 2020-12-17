@@ -28,7 +28,7 @@ class PositivityControllerTest extends TestCase
 
 
 
-        $this->assertEquals("Correct", $actual);
+        $this->assertEquals("correct", $actual);
     }
 
 
@@ -36,7 +36,16 @@ class PositivityControllerTest extends TestCase
 
         $actual = $this->positivityController->countPositivity("matin");
 
-        $this->assertEquals("Neutre", $actual);
+        $this->assertEquals("neutre", $actual);
+    }
+
+    public function test_countPositivity_given2PositiveWords_shouldReturnCorrect(){
+
+        $message="bon parfait";
+
+        $actual = $this->positivityController->countPositivity($message);
+
+        $this->assertEquals("correct", $actual);
     }
 
 
