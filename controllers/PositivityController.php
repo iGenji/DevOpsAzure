@@ -14,8 +14,11 @@ class PositivityController{
     }
 
     public function countPositivity($message):string{
-
-        return "Correct";
+        if($message ==="bon"){
+            return "Correct";
+        }else{
+            return "Neutre";
+        }
     }
 
 }
