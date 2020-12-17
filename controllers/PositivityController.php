@@ -59,7 +59,7 @@ class PositivityController{
                 return "franchement positif";
                 break;
             case 9:
-                return "exellent";
+                return "excellent";
                 break;
             case 10:
                 return "parfait";
