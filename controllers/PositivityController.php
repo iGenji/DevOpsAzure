@@ -13,4 +13,9 @@ class PositivityController{
         require_once(CHEMIN_VUES . 'positivity.php');
     }
 
+    public function countPositivity($message):string{
+
+        return "Correct";
+    }
+
 }
