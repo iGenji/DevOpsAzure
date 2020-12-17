@@ -36,8 +36,8 @@
 			$controller = new ContactController();
 			break;
         case 'positivity':
-            require_once("controller/PositivityController.php");
-            $controller = new ContactController();
+            require_once("controllers/PositivityController.php");
+            $controller = new PositivityController();
             break;
 		default: # Par défaut, le contrôleur de l'accueil est sélectionné
 			require_once('controllers/AccueilController.php');	

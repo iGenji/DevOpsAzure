@@ -8,6 +8,7 @@ class PositivityController{
 
     public function run(){
 
+        $notification="";
 
         require_once(CHEMIN_VUES . 'positivity.php');
     }
