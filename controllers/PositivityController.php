@@ -9,6 +9,15 @@ class PositivityController{
     public function run(){
 
         $notification="";
+        $hapiness="";
+
+        // form handling
+
+        if(!empty($_POST['form_positivity'])){
+            $message = $_POST['message'];
+            $hapiness = $this->countPositivity($message);
+            $notification = "Votre résultat est le suivant:";
+        }
 
         require_once(CHEMIN_VUES . 'positivity.php');
     }
